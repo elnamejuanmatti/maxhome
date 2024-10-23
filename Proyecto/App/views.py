@@ -17,7 +17,7 @@ def Home(request):
 
 # Partes que se necesitan permisos para poder acceder 
 @login_required
-
+@permission_required('App.add_Productos')
 def Agregar(request):
     data={
         'forms':NuevoProducto()

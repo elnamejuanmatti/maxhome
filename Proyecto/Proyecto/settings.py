@@ -126,6 +126,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #--->Importar OS
 import os
 
+#--->Carpeta de Ubicación de Imagenes
+MEDIA_URL='/Media/'
+#--->Ubicación de la Carpeta
+MEDIA_ROOT=os.path.join(BASE_DIR,'Media')
+
 #--->Url(URL Login)
 LOGIN_REDIRECT_URL='/'
 LOGOUT_REDIRECT_URL='/'
