@@ -7,6 +7,17 @@
     <title>Max Home</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul>
+                {% if user.is_authenticated %}
+                <a href="{% url 'logouts' %}" id="contacto_btl">Logout</a>
+                {% else %}
+                <a href="{% url 'login' %}" id="contacto_btl">login</a>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
     <h1>¿Funca o no ?</h1>
 </body>
 </html>
